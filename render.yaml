@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: estoque-api
+    env: docker
+    repo: https://github.com/Michaelrodriguesds/Controle_De_Estoque
+    dockerImage: myshelrodrigues189/estoque-api:prod
+    plan: free
+    region: oregon
+    healthCheckPath: /api/produtos
+    autoDeploy: false
+
+  - type: web
+    name: estoque-frontend
+    env: docker
+    repo: https://github.com/Michaelrodriguesds/Controle_De_Estoque
+    dockerImage: myshelrodrigues189/estoque-frontend:prod
+    plan: free
+    region: oregon
+    healthCheckPath: /
+    autoDeploy: false

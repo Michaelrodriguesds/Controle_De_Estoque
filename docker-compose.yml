@@ -1,20 +1,24 @@
-version: '3.8'
-
 services:
   api:
     build:
       context: ./API/EstoqueAPI
       dockerfile: Dockerfile
+    image: myshelrodrigues189/estoque-api:prod
     ports:
       - "5000:5000"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
+      - MongoDbSettings__ConnectionString=mongodb+srv://Michael:37128221@cluster0.n38o0fu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - MongoDbSettings__DatabaseName=estoque_db
+    restart: unless-stopped
 
   frontend:
     build:
       context: ./FrontEnd/estoque-front
       dockerfile: Dockerfile
+    image: myshelrodrigues189/estoque-frontend:prod
     ports:
-      - "4200:80"
+      - "80:80"
     depends_on:
       - api
+    restart: unless-stopped
