@@ -2,9 +2,7 @@ services:
   - type: web
     name: estoque-api
     env: docker
-    repo: https://github.com/Michaelrodriguesds/Controle_De_Estoque
-    branch: main
-    dockerfilePath: ./api/Dockerfile
+    image: myshelrodrigues189/estoque-api:prod
     plan: free
     region: oregon
     healthCheckPath: /api/produtos
@@ -13,9 +11,7 @@ services:
   - type: web
     name: estoque-frontend
     env: docker
-    repo: https://github.com/Michaelrodriguesds/Controle_De_Estoque
-    branch: main
-    dockerfilePath: ./frontend/Dockerfile
+    image: myshelrodrigues189/estoque-frontend:prod
     plan: free
     region: oregon
     healthCheckPath: /
