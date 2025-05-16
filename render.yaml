@@ -3,7 +3,8 @@ services:
     name: estoque-api
     env: docker
     repo: https://github.com/Michaelrodriguesds/Controle_De_Estoque
-    dockerImage: myshelrodrigues189/estoque-api:prod
+    branch: main
+    dockerfilePath: ./api/Dockerfile
     plan: free
     region: oregon
     healthCheckPath: /api/produtos
@@ -13,7 +14,8 @@ services:
     name: estoque-frontend
     env: docker
     repo: https://github.com/Michaelrodriguesds/Controle_De_Estoque
-    dockerImage: myshelrodrigues189/estoque-frontend:prod
+    branch: main
+    dockerfilePath: ./frontend/Dockerfile
     plan: free
     region: oregon
     healthCheckPath: /
