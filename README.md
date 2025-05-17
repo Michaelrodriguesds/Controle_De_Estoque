@@ -59,11 +59,11 @@ As imagens abaixo mostram o funcionamento real da aplicação em diferentes tela
 
 | Login PC | Status Estoque | Busca Produto | Detalhe Produto |
 |---|---|---|---|
-| ![Login](img/login-pc.JPG) | ![Status](img/status-pc.JPG) | ![Busca](img/busca-pc.JPG) | ![Detalhe](img/detalhe-pc.JPG) |
+| ![Login](img/login-pc.jpg) | ![Status](img/status-pc.jpg) | ![Busca](img/busca-pc.jpg) | ![Detalhe](img/detalhe-pc.jpg) |
 
 | Adiciona Produto | Status Mobile | Busca Mobile | Produto Mobile |
 |---|---|---|---|
-| ![Adiciona](img/adiciona-pc.JPG) | ![StatusSm](img/status-smat.JPG) | ![BuscaSm](img/busca-smat.JPG) | ![ProdutoSm](img/produto-smat.JPG) |
+| ![Adiciona](img/adiciona-pc.jpg) | ![StatusSm](img/status-smat.jpg) | ![BuscaSm](img/busca-smat.jpg) | ![ProdutoSm](img/produto-smat.jpg) |
 
 ---
 
